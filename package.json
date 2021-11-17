@@ -1,0 +1,37 @@
+{
+  "name": "javascript-ci-example",
+  "version": "1.0.0",
+  "description": "Simple CI Example",
+  "private": true,
+  "scripts": {
+    "build": "webpack --mode=production",
+    "start": "webpack serve --mode=development",
+    "test": "jest"
+  },
+  "jest": {
+    "transform": {
+      "^.*/src/.+\\.js": "babel-jest"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bgoeschlberger/javascript-ci-example.git"
+  },
+  "keywords": [
+    "ci-demo"
+  ],
+  "author": "bgoeschlberger",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bgoeschlberger/javascript-ci-example/issues"
+  },
+  "homepage": "https://github.com/bgoeschlberger/javascript-ci-example#readme",
+  "devDependencies": {
+    "@babel/preset-env": "^7.16.4",
+    "html-webpack-plugin": "^5.5.0",
+    "jest": "^27.3.1",
+    "webpack": "^5.64.1",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.5.0"
+  }
+}
